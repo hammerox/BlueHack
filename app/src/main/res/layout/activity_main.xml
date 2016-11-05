@@ -11,8 +11,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hammerox.bluehack.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"/>
+
 </RelativeLayout>
