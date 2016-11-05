@@ -24,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
     public void clickOnFullScreen() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
