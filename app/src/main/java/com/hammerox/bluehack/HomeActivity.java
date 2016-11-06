@@ -70,16 +70,6 @@ public class HomeActivity extends AppCompatActivity
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.home_tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.home_fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
     }
 
 

@@ -48,6 +48,7 @@
                     android:maxLines="1"
                     android:textColor="@color/colorAccent"
                     android:textColorHint="@color/colorAccent"
+                    android:imeOptions="actionNext"
                     android:theme="@style/Theme.App.Base"/>
 
             </android.support.design.widget.TextInputLayout>
@@ -63,9 +64,9 @@
                     android:hint="@string/prompt_password"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
+                    android:imeOptions="actionDone"
                     android:textColor="@color/colorAccent"
                     android:textColorHint="@color/colorAccent"
                     android:theme="@style/Theme.App.Base"/>

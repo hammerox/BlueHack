@@ -14,16 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_new_login"
-            android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_new_login"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
         </activity>
         <activity
             android:name=".RegisterActivity"
@@ -38,6 +39,7 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity android:name=".DetailsActivity"
             android:parentActivityName=".HomeActivity">
