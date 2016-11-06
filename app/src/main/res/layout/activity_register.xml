@@ -48,7 +48,7 @@
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
                 android:maxLines="1"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapSentences"
                 android:hint="Nome"/>
 
             <EditText
@@ -60,7 +60,7 @@
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
                 android:maxLines="1"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapSentences"
                 android:hint="Sobrenome"/>
 
             <EditText
@@ -72,7 +72,7 @@
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
                 android:maxLines="1"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapSentences"
                 android:hint="Cidade"/>
 
             <EditText
@@ -84,7 +84,7 @@
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
                 android:maxLines="1"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|textCapSentences"
                 android:hint="Estado"/>
 
             <EditText
