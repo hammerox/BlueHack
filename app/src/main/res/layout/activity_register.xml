@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_knowyou"
+            android:text="@string/register_toptext"
             android:textColor="@color/colorAccent"
             android:textAlignment="center"
             android:textSize="22sp"

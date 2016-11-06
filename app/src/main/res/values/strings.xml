@@ -26,5 +26,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="register_knowyou">QUEREMOS SABER MAIS SOBRE VOCÊ!</string>
+    <string name="register_toptext">QUEREMOS SABER MAIS SOBRE VOCÊ!</string>
+    <string name="interest_toptext">E AÍ, O QUE VAMOS APRENDER?</string>
 </resources>
