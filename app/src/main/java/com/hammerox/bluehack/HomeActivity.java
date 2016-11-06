@@ -8,6 +8,8 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
@@ -20,7 +22,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -114,6 +120,7 @@ public class HomeActivity extends AppCompatActivity
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private List<Person> persons;
 
         public PlaceholderFragment() {
         }
@@ -134,9 +141,28 @@ public class HomeActivity extends AppCompatActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
+            RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv);
+            rv.setHasFixedSize(true);
+
+            LinearLayoutManager llm = new LinearLayoutManager(getActivity());
+            rv.setLayoutManager(llm);
+
+            initializeData();
+            RVAdapter adapter = new RVAdapter(persons);
+            rv.setAdapter(adapter);
+
             return rootView;
+        }
+
+        // This method creates an ArrayList that has three Person objects
+        // Checkout the project associated with this tutorial on Github if
+        // you want to use the same images.
+        private void initializeData(){
+            persons = new ArrayList<>();
+            persons.add(new Person("Emma Wilson", "23 years old", R.drawable.ic_menu_camera));
+            persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.ic_menu_gallery));
+            persons.add(new Person("Lillie Watts", "35 years old", R.drawable.ic_menu_manage));
         }
     }
 
