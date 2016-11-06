@@ -132,6 +132,9 @@
                 android:layout_marginBottom="16dp"
                 app:layout_columnSpan="3"
                 android:text="VAMOS"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:padding="16dp"
                 />
 
         </android.support.v7.widget.GridLayout>

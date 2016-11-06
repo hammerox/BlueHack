@@ -19,6 +19,11 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_new_login"
             android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".HomeActivity"
@@ -28,11 +33,6 @@
         <activity android:name=".RegisterActivity">
         </activity>
         <activity android:name=".InterestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 

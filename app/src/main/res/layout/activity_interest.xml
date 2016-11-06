@@ -107,7 +107,6 @@
         android:visibility="gone"
         android:text="PRONTO"
         android:textStyle="bold"
-        android:textColor="@color/colorAccent"
         android:textSize="22sp"
         android:padding="16dp"
         android:layout_alignParentBottom="true"/>

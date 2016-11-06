@@ -52,9 +52,6 @@ public class InterestActivity extends AppCompatActivity {
 
         if (interestCount == 1) {
             interestButton.setVisibility(View.VISIBLE);
-
-            interestButton.getBackground().setColorFilter(
-            new PorterDuffColorFilter(colorPrimary, PorterDuff.Mode.MULTIPLY));
         }
     }
 
