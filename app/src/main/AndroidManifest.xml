@@ -18,23 +18,29 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_new_login"
-            android:windowSoftInputMode="stateVisible|adjustPan">
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".LoginActivity">
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="stateHidden">
         </activity>
-        <activity android:name=".InterestActivity"
+        <activity
+            android:name=".InterestActivity"
             android:parentActivityName=".RegisterActivity">
         </activity>
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        </activity>
+        <activity android:name=".DetailsActivity"
+            android:parentActivityName=".HomeActivity">
         </activity>
     </application>
 
