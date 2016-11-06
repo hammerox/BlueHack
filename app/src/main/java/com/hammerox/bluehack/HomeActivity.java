@@ -22,9 +22,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -140,7 +137,7 @@ public class HomeActivity extends AppCompatActivity
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
             RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv);
             rv.setHasFixedSize(true);
