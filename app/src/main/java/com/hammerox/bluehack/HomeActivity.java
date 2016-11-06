@@ -157,9 +157,9 @@ public class HomeActivity extends AppCompatActivity
         // you want to use the same images.
         private void initializeData(){
             persons = new ArrayList<>();
-            persons.add(new Person("Emma Wilson", "23 years old", R.drawable.ic_menu_camera));
-            persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.ic_menu_gallery));
-            persons.add(new Person("Lillie Watts", "35 years old", R.drawable.ic_menu_manage));
+            persons.add(new Person("Emma Wilson", "23 years old", R.drawable.sgm_card));
+            persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.austriac_card));
+            persons.add(new Person("Lillie Watts", "35 years old", R.drawable.santoro_card));
         }
     }
 
