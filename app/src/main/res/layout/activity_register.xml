@@ -14,10 +14,14 @@
         android:background="@drawable/img_login"
         android:scaleType="center"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="16dp">
 
         <TextView
@@ -43,6 +47,7 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
+                android:maxLines="1"
                 android:hint="Nome"/>
 
             <EditText
@@ -53,6 +58,7 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
+                android:maxLines="1"
                 android:hint="Sobrenome"/>
 
             <EditText
@@ -63,6 +69,7 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
+                android:maxLines="1"
                 android:hint="Cidade"/>
 
             <EditText
@@ -73,6 +80,7 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
+                android:maxLines="1"
                 android:hint="Estado"/>
 
             <EditText
@@ -83,26 +91,49 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent"
                 android:theme="@style/Theme.App.Base"
+                android:maxLines="1"
                 android:hint="DD/MM/AA"/>
 
             <android.support.v4.widget.Space
                 app:layout_columnWeight="1"/>
 
-            <EditText
-                android:id="@+id/register_sex"
+            <RadioGroup
+                android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_columnWeight="2"
-                android:textColor="@color/colorAccent"
-                android:textColorHint="@color/colorAccent"
+                android:gravity="bottom"
                 android:theme="@style/Theme.App.Base"
-                android:hint="Sexo"/>
+                app:layout_columnWeight="2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="M"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="F"/>
+
+                </RadioGroup>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_columnSpan="3"
+                android:text="VAMOS"
+                />
 
         </android.support.v7.widget.GridLayout>
 
     </LinearLayout>
 
 
-
+    </ScrollView>
 
 </FrameLayout>
