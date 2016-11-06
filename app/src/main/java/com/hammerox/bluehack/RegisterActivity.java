@@ -23,6 +23,5 @@ public class RegisterActivity extends AppCompatActivity {
     public void onOkayClick() {
         Intent intent = new Intent(this, InterestActivity.class);
         startActivity(intent);
-        finish();
     }
 }

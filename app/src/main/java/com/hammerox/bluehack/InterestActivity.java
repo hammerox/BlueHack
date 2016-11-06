@@ -69,6 +69,6 @@ public class InterestActivity extends AppCompatActivity {
     public void onOkayClick() {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
-        finish();
+        finishAffinity();
     }
 }
